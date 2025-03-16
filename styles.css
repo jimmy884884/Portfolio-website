@@ -1,0 +1,458 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(255, 20, 147, 0.5);
+}
+
+header h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3em;
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #00ffcc;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff00ff;
+    transform: scale(1.1);
+}
+
+.tab-content {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 30px rgba(255, 20, 147, 0.5);
+}
+
+.tab {
+    display: none;
+}
+
+.tab.active {
+    display: block;
+}
+
+h2 {
+    color: #00ffcc;
+    text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 30px #ff1493;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(255, 20, 147, 0.5);
+}
+
+.profile-photo {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+    box-shadow: 0 0 20px rgba(255, 20, 147, 0.5);
+}
+
+.about-text {
+    max-width: 600px;
+    margin-left: 20px;
+    line-height: 1.6;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.know-me-container {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding for inner spacing */
+    box-shadow: 0 0 30px rgba(255, 20, 147, 0.5); /* Neon pink shadow */
+    max-width: 800px; /* Limit the width */
+    margin: 20px auto; /* Center the container */
+}
+
+.know-me-container ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+}
+
+.know-me-container li {
+    margin: 15px 0; /* Space between list items */
+    padding: 10px; /* Padding for each item */
+    border: 1px solid rgba(255, 20, 147, 0.5); /* Neon pink border */
+    border-radius: 5px; /* Rounded corners for list items */
+    transition: background 0.3s, transform 0.3s; /* Transition for hover effects */
+}
+
+.know-me-container li:hover {
+    background: rgba(255, 20, 147, 0.2); /* Light pink background on hover */
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+.know-me-container strong {
+    color: #00ffcc; /* Neon green color for labels */
+}
+
+.know-me-container span {
+    color: #ffffff; /* White color for the text */
+}
+
+.achievement-container {
+    margin: 20px 0;
+}
+
+.achievement-item {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(255, 20, 147, 0.5);
+}
+
+.achievement-image {
+    width: 80%; /* Set a percentage width to reduce size */
+    max-width: 200px; /* Set a maximum width for the images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners */
+    margin-top: 10px; /* Space above the image */
+    transition: transform 0.3s; /* Transition for hover effects */
+}
+
+.achievement-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive grid with smaller minimum size */
+    gap: 15px; /* Space between images */
+    margin-top: 20px;
+}
+
+.gallery-item {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px; /* Padding for inner spacing */
+    text-align: center; /* Center text */
+    box-shadow: 0 0 20px rgba(255, 20, 147, 0.5); /* Neon pink shadow */
+    transition: transform 0.3s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.gallery-image {
+    width: 100%; /* Make the images responsive */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 20, 147, 0.5);
+}
+
+.gallery-item span {
+    display: block; /* Make the text a block element */
+    margin-top: 5px; /* Space between image and text */
+    color: #ffffff; /* White text color */
+    font-size: 1em; /* Font size for gallery item text */
+}
+
+.testimonial-container {
+    display: flex;
+    flex-direction: column; /* Stack testimonials vertically */
+    align-items: center; /* Center items */
+    margin: 20px auto; /* Center the container */
+    max-width: 800px; /* Limit the width */
+}
+
+.testimonial-item {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px; /* Padding for inner spacing */
+    margin: 10px 0; /* Space between testimonials */
+    box-shadow: 0 0 20px rgba(255, 20, 147, 0.5); /* Neon pink shadow */
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    width: 100%; /* Full width */
+}
+
+.client-photo {
+    border-radius: 50%; /* Circular photo */
+    width: 80px; /* Increased size for client photo */
+    height: 80px; /* Increased size for client photo */
+    margin-right: 15px; /* Space between photo and text */
+    box-shadow: 0 0 10px rgba(255, 20, 147, 0.5); /* Neon pink shadow */
+}
+
+.testimonial-item p {
+    margin: 0; /* Remove default margin */
+    font-size: 1.1em; /* Font size for testimonial text */
+    color: #ffffff; /* White text color */
+}
+
+.testimonial-item strong {
+    color: #00ffcc; /* Neon green color for client name */
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 20px rgba(255, 20, 147, 0.5);
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em; /* Font size for footer text */
+}
+
+footer a {
+    color: #00ffcc; /* Neon green color for footer links */
+    text-decoration: none; /* Remove underline */
+}
+
+footer a:hover {
+    color: #ff00ff; /* Change color on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Blogs Section */
+.blog-container {
+    display: flex;
+    flex-direction: column; /* Stack blog items vertically */
+    align-items: center; /* Center items */
+    margin: 20px auto; /* Center the container */
+    max-width: 800px; /* Limit the width */
+}
+
+.blog-item {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px; /* Padding for inner spacing */
+    margin-bottom: 20px; /* Space between blog items box-shadow: 0 0 20px rgba(255, 20, 147, 0.5); /* Neon pink shadow */
+    width: 100%; /* Full width */
+    position: relative; /* Position relative for pseudo-elements */
+    overflow: hidden; /* Hide overflow for stickers */
+}
+
+.blog-item::before {
+    content: "🖌️"; /* Sticker emoji */
+    position: absolute; /* Position absolute for sticker */
+    top: -20px; /* Position above the item */
+    left: 10px; /* Position to the left */
+    font-size: 40px; /* Size of the sticker */
+    opacity: 0.5; /* Slightly transparent */
+}
+
+.blog-item h3 {
+    color: #00ffcc; /* Neon green color for blog title */
+    margin: 0; /* Remove default margin */
+}
+
+.blog-item p {
+    color: #ffffff; /* White text color */
+    margin: 5px 0; /* Space above and below text */
+}
+
+.blog-link {
+    display: inline-block; /* Make the link a block element */
+    margin-top: 10px; /* Space above link */
+    padding: 10px 15px; /* Padding for the link */
+    background: #00ffcc; /* Link background color */
+    color: #000; /* Link text color */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background 0.3s, box-shadow 0.3s; /* Transition for hover effects */
+}
+
+.blog-link:hover {
+    background: #ff00ff; /* Change background on hover */
+    color: #fff; /* Change text color on hover */
+    box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff; /* Neon pink glow on hover */
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center the items */
+    margin: 20px auto; /* Center the container */
+    max-width: 800px; /* Limit the width */
+}
+
+.skill-item {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px; /* Padding for inner spacing */
+    margin: 10px; /* Space between items */
+    box-shadow: 0 0 20px rgba(255, 20, 147, 0.5); /* Neon pink shadow */
+    font-size: 1.2em; /* Font size */
+    transition: transform 0.3s, background 0.3s; /* Transition for hover effects */
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Center items vertically */
+}
+
+.skill-item:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    background: rgba(255, 20, 147, 0.2); /* Light pink background on hover */
+}
+
+.skill-item span {
+    margin-right: 10px; /* Space between skill name and emoji */
+}
+
+.contact-form-container {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding for inner spacing */
+    box-shadow: 0 0 30px rgba(255, 20, 147, 0.5); /* Neon pink shadow */
+    max-width: 600px; /* Limit the width */
+    margin: 20px auto; /* Center the container */
+}
+
+.contact-form-container form {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2); /* Slightly more opaque background */
+    color: #fff;
+    box-shadow: 0 0 10px rgba(255, 20, 147, 0.5);
+    transition: background 0.3s, box-shadow 0.3s; /* Transition for hover effects */
+}
+
+input::placeholder, textarea::placeholder {
+    color: #00ffcc; /* Placeholder color */
+}
+
+input:hover, textarea:hover {
+    background: rgba(255, 255, 255, 0.3); /* Change background on hover */
+    box-shadow: 0 0 15px rgba(255, 20, 147, 0.7); /* Increase shadow on hover */
+}
+
+button {
+    background: # 00ffcc;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 10px rgba(255, 20, 147, 0.5);
+}
+
+button:hover {
+    background: #ff00ff;
+    color: #fff;
+    box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff; /* Neon pink glow on hover */
+}
+
+ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+}
+
+ul li {
+    margin: 10px 0; /* Space between list items */
+    font-size: 1.1em; /* Font size for contact methods */
+    color: #ffffff; /* White text color */
+}
+
+ul li a {
+    color: #00ffcc; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column; /* Stack projects vertically */
+    align-items: center; /* Center items */
+    margin: 20px auto; /* Center the container */
+    max-width: 800px; /* Limit the width */
+}
+
+.project-item {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px; /* Padding for inner spacing */
+    margin-bottom: 20px; /* Space between projects */
+    box-shadow: 0 0 20px rgba(255, 20, 147, 0.5); /* Neon pink shadow */
+    transition: transform 0.3s; /* Transition for hover effects */
+    width: 100%; /* Full width */
+}
+
+.project-item:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+.project-image {
+    width: 100%; /* Make the image responsive */
+    border-radius: 5px; /* Rounded corners for images */
+    margin-top: 10px; /* Space above the image */
+    transition: transform 0.3s; /* Transition for hover effects */
+}
+
+.project-image:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.project-link {
+    display: inline-block; /* Make the link a block element */
+    margin-top: 10px; /* Space above the link */
+    padding: 10px 15px; /* Padding for the link */
+    background: #00ffcc; /* Link background color */
+    color: #000; /* Link text color */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background 0.3s, box-shadow 0.3s; /* Transition for hover effects */
+}
+
+.project-link:hover {
+    background: #ff00ff; /* Change background on hover */
+    color: #fff; /* Change text color on hover */
+    box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff; /* Neon pink glow on hover */
+}
